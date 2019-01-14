@@ -2,8 +2,8 @@
 /**
  * Write a description of Part2 here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Sachin Kr. Shukla) 
+ * @version (V 1.0; 13 Jan, 2019)
  */
 public class Part2 {
     public String findSimpleGene(String DNA, String startCodon, String stopCodon)
@@ -13,19 +13,19 @@ public class Part2 {
         int startIndex = DNA.indexOf(startCodon);
         if (startIndex == -1)
         {
-            return "";
+            return result;
         }
         
         int stopIndex = DNA.indexOf(stopCodon, startIndex + 3);
         if (stopIndex == -1)
         {
-            return "";
+            return result;
         }
         
         result = DNA.substring(startIndex, stopIndex + 3);
         if (result.length() % 3 != 0)
         {
-            return "";
+            return result;
         }
         return result;
     }

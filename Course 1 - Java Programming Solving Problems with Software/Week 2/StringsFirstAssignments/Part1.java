@@ -52,7 +52,7 @@ public class Part1 {
         gene = findSimpleGene(DNA);
         System.out.println("Gene is " + gene);
         
-        DNA = "ATGGKVTAA";
+        DNA = "AAATGCCCTAACTAGATTAAGAAACC";
         System.out.println("DNA is " + DNA);
         gene = findSimpleGene(DNA);
         System.out.println("Gene is " + gene.toLowerCase());
