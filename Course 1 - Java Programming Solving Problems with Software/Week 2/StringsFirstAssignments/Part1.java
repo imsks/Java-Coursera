@@ -1,6 +1,6 @@
 
 /**
- * Write a description of Part1 here.
+ * Finding the genes.
  * 
  * @author (Sachin Kr. Shukla) 
  * @version (V1.0, 12 Jan, 2019)
