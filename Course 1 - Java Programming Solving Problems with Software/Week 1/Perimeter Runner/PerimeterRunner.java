@@ -62,8 +62,8 @@ public class PerimeterRunner {
         System.out.println("perimeter = " + length);
         System.out.println("Number of points = "+ numPoints);
         System.out.println("Average of sides = "+ average);
-        System.out.println("Longest side = "+longestSide);
-        System.out.println("Largest x = "+largeX);
+        System.out.println("Longest side = "+ longestSide);
+        System.out.println("Largest x = "+ largeX);
     }
 
     public static void main (String[] args) {

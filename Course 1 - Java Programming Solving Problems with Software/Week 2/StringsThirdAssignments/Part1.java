@@ -80,24 +80,9 @@ public class Part1 {
     }
 
     public void testFindGene(){
-        String dna = "ABCGDHYRIJRS";
+        String dna = "CTGONEAtGONEcCCGGGAAAXXXYYYGGGGTAGYYCTGCCCATGENDZZZTAAONEXXXYYYZZZTAAXXxXXTWOATGTWOYYYZZZCCCATGATGENDZZZTAGTWOXXTHREEATGATGTAATHREESTOPTAGAGGGCCCCCFOURATGTAGGXXXFIVEAtgYYYFIVZZZAAAXXXFIVENDZZZTGAFIVESTOPSIXATGSIXCGGGCCGGGATCAAASIXENDTAASEVATGSIXCGGGCCGGGATCAAASEVENDENDtaAEIGSTOPTAGAGLASTONEATgtAACTG";
         System.out.println("The DNA is : " +  " " + dna);
         String gene = findGene(dna);
         System.out.println("The gene is : " + " " + gene); 
-        
-        dna = "BAVGDHGEYRATGAHBFGEH";
-        System.out.println("The DNA is : " +  " " + dna);
-        gene = findGene(dna);
-        System.out.println("The gene is : " + " " + gene);
-        
-        dna = "AHUEYBOTMNJNNSKJNATGHBFTAA";
-        System.out.println("The DNA is : " +  " " + dna);
-        gene = findGene(dna);
-        System.out.println("The gene is : " + " " + gene);
-        
-        dna = "AHGDURYHRJDLATGEYSTGAHJFTAGjktji";
-        System.out.println("The DNA is : " +  " " + dna);
-        gene = findGene(dna);
-        System.out.println("The gene is : " + " " + gene);
     }
 }
