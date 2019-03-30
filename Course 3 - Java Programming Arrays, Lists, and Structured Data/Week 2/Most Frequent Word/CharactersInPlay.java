@@ -41,7 +41,7 @@ public class CharactersInPlay {
     }
     
     private void findAllCharacters(){
-        FileResource fr = new FileResource("test.txt");
+        FileResource fr = new FileResource("errors.txt");
         for(String s : fr.lines()){
             int index = s.indexOf('.');
             if(index != -1){
@@ -82,10 +82,11 @@ public class CharactersInPlay {
     public void tester(){
         findAllCharacters();
         for(int k = 0; k < name.size(); k++){
-          //System.out.println(name.get(k) + " has " + counts.get(k) + " no of dialouges ");
+          System.out.println(name.get(k) + " has " + counts.get(k) + " no of dialouges ");
           
         }
         //mostChar(name);
-        charactersWithNumParts(10,15);
+        //charactersWithNumParts(10,15);
     }
+    
 }

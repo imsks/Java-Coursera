@@ -26,7 +26,7 @@ public class WordFrequencies {
     private void findUnique(){
         myWords.clear();
         myFreqs.clear();
-        FileResource fr = new FileResource("test.txt");
+        FileResource fr = new FileResource("errors.txt");
         
         for(String s : fr.words()){
             s = s.toLowerCase();
@@ -64,9 +64,9 @@ public class WordFrequencies {
     
     public void tester(){
         findUnique();
-        //System.out.println("Unique words are " + myWords.size());
+        System.out.println("Unique words are " + myWords.size());
         for(int k = 0; k< myWords.size(); k++){
-            //System.out.println(myFreqs.get(k) + "\t" + myWords.get(k));
+            System.out.println(myFreqs.get(k) + "\t" + myWords.get(k));
         }
         System.out.println("Max value is " + findIndexOfMax(myWords));
         mostOften(myWords);
