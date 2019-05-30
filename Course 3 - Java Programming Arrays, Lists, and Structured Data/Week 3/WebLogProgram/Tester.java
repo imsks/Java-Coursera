@@ -30,20 +30,20 @@ public class Tester
     public void testUniqueIP()
     {
         LogAnalyzer la = new LogAnalyzer();
-        la.readFile("weblog1_log.txt");
+        la.readFile("weblog2_log");
         int count = la.countUniqueIPs();
         
         System.out.println("There are " + count + " unique IP's in weblog-short_log.txt");
         
-        la.printAllHigherThanNum(400);
+        //la.printAllHigherThanNum(400);
     }
     
     public void testUniqueIPVisitsOnDay()
     {
         LogAnalyzer la = new LogAnalyzer();
-        la.readFile("weblog1_log.txt");
+        la.readFile("weblog2_log");
         
-        ArrayList<String> sep14 = la.uniqueIPVisitsOnDay("Mar 17");
+        ArrayList<String> sep14 = la.uniqueIPVisitsOnDay("Sep 27");
         
         for(String s: sep14){
             System.out.println(s);
@@ -54,19 +54,19 @@ public class Tester
         
         for(String s1: sep30)
         {
-            System.out.println(s1);
+            //System.out.println(s1);
         }
     }
     
     public void testCountUniqueIPsInRange()
     {
         LogAnalyzer la = new LogAnalyzer();
-        la.readFile("weblog1_log.txt");
+        la.readFile("weblog2_log");
         
         int test1 = la.countUniqueIPsInRange(200, 299);
-        //System.out.println("Expected: 4 Got: " + test1);
+        System.out.println("Expected: 4 Got: " + test1);
         
         int test2 = la.countUniqueIPsInRange(300, 399);
-        System.out.println("Expected: 2 Got: " + test2);
+        //System.out.println("Expected: 2 Got: " + test2);
     }
 }
