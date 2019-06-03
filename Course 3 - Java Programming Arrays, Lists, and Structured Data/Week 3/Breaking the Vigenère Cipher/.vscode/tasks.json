@@ -1,0 +1,28 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "jc",
+            "command": "java",
+            "windows": {
+                "command": "C:\\Program Files\\Java\\jdk-12.0.1\bin\\javac.exe"
+            },
+            "args": [
+                "${file}"
+            ]
+        },
+        {
+            "label": "jr",
+            "command": "java",
+            "windows": {
+                "command": "C:\\Program Files\\Java\\jdk-12.0.1\bin\\javac.exe"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
