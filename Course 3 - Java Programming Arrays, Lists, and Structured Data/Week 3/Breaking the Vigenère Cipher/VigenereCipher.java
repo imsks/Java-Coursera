@@ -1,4 +1,3 @@
-import edu.duke.*;
 import java.util.*;
 
 public class VigenereCipher {
@@ -39,4 +38,7 @@ public class VigenereCipher {
         return Arrays.toString(ciphers);
     }
     
+    public void tester(){
+        
+    }
 }
